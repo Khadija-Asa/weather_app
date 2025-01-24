@@ -1,0 +1,61 @@
+/* Colors */
+:root {
+  --Light-Blue: #ceeaf7;
+  --Dark-Blue: #13293d;
+}
+
+/* Fonts */
+@font-face {
+  font-family: 'Barlow';
+  src: url(./Barlow_Condensed/BarlowCondensed-Black.ttf);
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  overflow: hidden;
+}
+
+/* Set core body defaults */
+body {
+  background-color: var(--Light-Blue);
+  color: var(--Dark-Blue);
+  font-family: 'Barlow';
+  text-transform: uppercase;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* main */
+.weather_container {
+  border: solid 5px var(--Dark-Blue);
+  padding: clamp(3rem, 2.6rem + 2vw, 5rem) clamp(5rem, 4.4rem + 3vw, 8rem);;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.weather_container h1 {
+  font-size: clamp(2rem, 1.7rem + 1.5vw, 3.5rem);
+}
+
+.weather_container p {
+  font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
+}
+
+.weather_container span {
+  font-style: italic;
+}
+
